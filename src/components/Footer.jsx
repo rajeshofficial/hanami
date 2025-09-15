@@ -12,7 +12,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 font-['sans-serif'] mb-6 max-w-md">
-              Transform your style with expert personal styling services. We help you discover your signature look and build confidence through thoughtful, personalized fashion guidance.
+              Transform your style with expert personal styling and image consulting. At Hanami, we help you discover your signature look and build lasting confidence through thoughtful, personalised guidance
             </p>
             <div className="flex space-x-4">
               {/* <a href="#" className="text-gray-300 hover:text-[#F9C4C5] transition-colors">
@@ -38,15 +38,15 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-heading text-white mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li><a href="#styling" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Personal Styling</a></li>
-              <li><a href="#wardrobe" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Wardrobe Cleanse</a></li>
-              <li><a href="#shopping" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Personal Shopping</a></li>
-              <li><a href="#makeover" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Style Makeover</a></li>
-            </ul>
-          </div>
+ <div>
+  <h3 className="text-lg font-heading text-white mb-2">Services</h3>
+  <ul className="space-y-1">
+    <li><a href="#basic" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Basic</a></li>
+    <li><a href="#intermediate" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Intermediate</a></li>
+    <li><a href="#advanced" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif']">Advanced</a></li>
+  </ul>
+</div>
+
 
           <div>
             <h3 className="text-lg font-heading text-white mb-4">Company</h3>
@@ -59,19 +59,33 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 font-['sans-serif'] text-sm">
-  © {new Date().getFullYear()} Hamani. All rights reserved.
-</p>
+     <div className="border-t border-gray-700 mt-8 pt-8">
+  <div className="flex flex-col md:flex-row justify-between items-center">
+    {/* Left side: copyright */}
+    <p className="text-gray-300 font-['sans-serif'] text-sm">
+      © {new Date().getFullYear()} Hamani. All rights reserved.
+    </p>
 
-            {/* <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm">Privacy Policy</a>
-              <a href="" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm">Terms of Service</a>
-              <a href="#" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm">Cookie Policy</a>
-            </div> */}
-          </div>
-        </div>
+    {/* Right side: Made by link */}
+    <a 
+      href="https://www.indiantechsolutions.com/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm mt-2 md:mt-0"
+    >
+      Made by Indian Tech Solutions
+    </a>
+
+    {/* 
+    <div className="flex space-x-6 mt-4 md:mt-0">
+      <a href="#" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm">Privacy Policy</a>
+      <a href="" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm">Terms of Service</a>
+      <a href="#" className="text-gray-300 hover:text-[#F9C4C5] transition-colors font-['sans-serif'] text-sm">Cookie Policy</a>
+    </div> 
+    */}
+  </div>
+</div>
+
       </div>
     </footer>
   )

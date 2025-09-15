@@ -14,7 +14,7 @@ const Services = () => {
         "Style insight - Basic wardrobe guidance",
         "Cluster shopping done online",
       ],
-      price: "Rs. 5,000",
+      price: "Basic",
       image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
     },
     {
@@ -28,7 +28,7 @@ const Services = () => {
         "Makeup Shopping",
         "Makeup Session (costs extra Rs. 1,000)",
       ],
-      price: "Rs. 6,000",
+      price: "Basic",
       image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
     },
     {
@@ -43,7 +43,7 @@ const Services = () => {
         "Cluster Shopping (online)",
         "Cluster Shopping (offline) (costs extra Rs. 2,000)",
       ],
-      price: "Rs. 9,000",
+      price: "Basic",
       image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
     },
     {
@@ -60,26 +60,8 @@ const Services = () => {
         "Cluster shopping (offline) (costs extra Rs. 2,000)",
         "Makeup Shopping (costs extra Rs. 2,000)",
       ],
-      price: "Rs. 11,000",
+      price: "Intermediate",
       image: "https://ext.same-assets.com/3327434280/4212507088.jpeg",
-    },
-    {
-      title: "Style Alchemy",
-      slug: "style-alchemy",
-      description:
-        "A full transformation combining style, fit, color, wardrobe evaluation, and shopping guidance. Online cluster shopping included; optional offline shopping/makeup sessions at additional cost.",
-      features: [
-        "Lifestyle Evaluation",
-        "Personal Style - Your signature look",
-        "Fit & Fashion - Body shape analysis",
-        "Colour Analysis",
-        "Cluster Shopping (online)",
-        "Wardrobe Evaluation",
-        "Cluster shopping (offline) (costs extra Rs. 2,000)",
-        "Makeup Shopping (costs extra Rs. 2,000)",
-      ],
-      price: "Rs. 14,000",
-      image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
     },
     {
       title: "Closet Curator",
@@ -93,9 +75,28 @@ const Services = () => {
         "Cluster shopping (online)",
         "Cluster shopping (offline) (costs extra Rs. 2,000)",
       ],
-      price: "Rs. 10,000",
+      price: "Intermediate",
       image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
     },
+    {
+      title: "Petal to Power",
+      slug: "style-alchemy",
+      description:
+        "A full transformation combining style, fit, color, wardrobe evaluation, and shopping guidance. Online cluster shopping included; optional offline shopping/makeup sessions at additional cost.",
+      features: [
+        "Lifestyle Evaluation",
+        "Personal Style - Your signature look",
+        "Fit & Fashion - Body shape analysis",
+        "Colour Analysis",
+        "Cluster Shopping (online)",
+        "Wardrobe Evaluation",
+        "Cluster shopping (offline) (costs extra Rs. 2,000)",
+        "Makeup Shopping (costs extra Rs. 2,000)",
+      ],
+      price: "Advanced",
+      image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
+    },
+    
     {
       title: "Dining Etiquette",
       slug: "dining-etiquette",

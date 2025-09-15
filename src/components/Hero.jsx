@@ -19,24 +19,35 @@ const Hero = () => {
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="text-xl md:text-2xl text-[#743438] font-['sans-serif'] italic mb-8 max-w-3xl mx-auto"
-          >
-            Personal Styling & Image Consulting
-          </motion.p>
+<motion.p
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+  className="text-xl md:text-2xl text-[#743438] font-['sans-serif'] italic mb-1 max-w-3xl mx-auto"
+>
+  Personal Styling & Image Consulting
+</motion.p>
+
+{/* Subtitle */}
+<motion.p
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+  className="text-base md:text-lg text-[#743438] font-['sans-serif'] italic mt-0 mb-8 max-w-3xl mx-auto leading-snug"
+>
+  Rooted in grace. Blooming with purpose
+</motion.p>
+
 
           {/* Secondary Heading */}
           <motion.h2
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
-            className="text-2xl md:text-4xl font-['system-ui'] text-[#0F0000] mb-8 max-w-4xl mx-auto leading-tight"
+            className="text-2xl md:text-3xl font-['system-ui'] text-[#0F0000] mb-8 max-w-4xl mx-auto leading-tight"
           >
-            Transform your style with expert personal styling services designed
-            for your unique personality and lifestyle
+            Discover styling and image solutions tailored for your body, personal colouring, and lifestyle so you feel confident, authentic, and effortless every day.
+
           </motion.h2>
 
           {/* Description */}
@@ -46,9 +57,8 @@ const Hero = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
             className="text-lg md:text-xl text-[#866061] mb-12 max-w-2xl mx-auto font-['sans-serif']"
           >
-            Discover your signature style with professional wardrobe
-            consultation, personal shopping, and style makeovers that boost your
-            confidence and simplify your daily choices.
+          Wardrobe edits | Personal shopping | Style makeovers
+
           </motion.p>
 
           {/* Buttons */}

@@ -125,25 +125,25 @@ const Contact = () => {
                   <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Personalized approach tailored to your lifestyle</span>
+                  <span className="text-[#0F0000] font-['sans-serif']">Styling rooted in you—your body, colouring, and lifestyle</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Professional expertise with proven results</span>
+                  <span className="text-[#0F0000] font-['sans-serif']">Confidence-first approach that goes beyond trends</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Budget-conscious solutions for every need</span>
+                  <span className="text-[#0F0000] font-['sans-serif']">Practical, sustainable solutions for everyday life</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Ongoing support and style guidance</span>
+                  <span className="text-[#0F0000] font-['sans-serif']">Guidance that helps you look good and feel aligned</span>
                 </li>
               </ul>
             </div>
@@ -156,13 +156,23 @@ const Contact = () => {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">hello@hamani.com</span>
+                  <a
+  href="mailto:hanamiimage@gmail.com"
+  className="text-[#0F0000] font-['sans-serif'] hover:underline"
+>
+  hanamiimage@gmail.com
+</a>
+
                 </div>
                 <div className="flex items-center">
                   <svg className="w-5 h-5 text-[#743438] mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">+919555429636</span>
+        <span className="text-[#0F0000] font-['sans-serif']">
+  <a href="tel:+919717229153" className="hover:underline">9717229153</a> / 
+  <a href="tel:+919555429636" className="hover:underline">95554 29636</a>
+</span>
+
                 </div>
               </div>
             </div>
