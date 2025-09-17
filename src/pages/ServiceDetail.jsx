@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Contact from "../components/Contact"
+import { useNavigate } from "react-router-dom"; 
+
 
 const serviceData = {
   "the-first-bloom": {
@@ -14,7 +17,7 @@ const serviceData = {
       "Basic wardrobe guidance",
       "Cluster shopping done online",
     ],
-    price: "Rs.5000",
+    price: "Basic",
     image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
   },
   "true-tones": {
@@ -30,7 +33,7 @@ const serviceData = {
       "Makeup shopping guidance",
       "Makeup session (optional, Rs.1000 extra)",
     ],
-    price: "Rs.6000",
+    price: "Basic",
     image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
   },
   "style-sculpt": {
@@ -47,7 +50,7 @@ const serviceData = {
       "Cluster shopping (online)",
       "Cluster shopping (offline, Rs.2000 extra)",
     ],
-    price: "Rs.9000",
+    price: "basic",
     image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
   },
   "image-edit": {
@@ -64,13 +67,13 @@ const serviceData = {
       "Color analysis",
       "Cluster shopping (online)",
       "Cluster shopping (offline, Rs.2000 extra)",
-      "Makeup shopping (Rs.2000 extra)",
+      "Makeup shopping ",
     ],
-    price: "Rs.11,000",
+    price: "Intermediate",
     image: "https://ext.same-assets.com/3327434280/4212507088.jpeg",
   },
   "style-alchemy": {
-    title: "Style Alchemy",
+    title: "Petal to Power",
     tagline: "Dressing with impact and purpose",
     description:
       "Our full transformation package combines wardrobe evaluation, personal style, color and body shape analysis, and curated shopping for a complete style overhaul.",
@@ -83,10 +86,10 @@ const serviceData = {
       "Color analysis",
       "Wardrobe evaluation",
       "Cluster shopping (online)",
-      "Cluster shopping (offline, Rs.2000 extra)",
-      "Makeup shopping (Rs.2000 extra)",
+      "Cluster shopping ",
+      "Makeup shopping ",
     ],
-    price: "Rs.14,000",
+    price: "Advanced",
     image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
   },
   "closet-curator": {
@@ -103,7 +106,7 @@ const serviceData = {
       "Cluster shopping (online)",
       "Cluster shopping (offline, Rs.2000 extra)",
     ],
-    price: "Rs.10,000",
+    price: "Intermediate",
     image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
   },
   "dining-etiquette": {
@@ -119,7 +122,7 @@ const serviceData = {
       "Do’s and Don’ts while dining",
       "Graceful conversation during meals",
     ],
-    price: "Rs.5000",
+    price: "Intermediate",
     image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
   },
 };
@@ -137,6 +140,7 @@ const staggerContainer = {
 
 const ServiceDetail = ({ slug }) => {
   const service = serviceData[slug];
+  const navigate = useNavigate(); 
   if (!service) return <div className="p-10 text-center">Service not found</div>;
 
   return (
@@ -236,14 +240,16 @@ const ServiceDetail = ({ slug }) => {
   </motion.p>
 
   {/* Book Button */}
-  <motion.button
-    className="bg-gradient-to-r from-[#743438] to-[#b85a5e] text-white px-10 py-5 rounded-2xl text-lg font-bold tracking-wide shadow-xl hover:scale-105 hover:shadow-2xl transition duration-500"
-    variants={fadeInUp}
-    whileHover={{ scale: 1.08 }}
-    whileTap={{ scale: 0.96 }}
-  >
-    Book Your Luxury Experience
-  </motion.button>
+<motion.button
+  className="bg-gradient-to-r from-[#743438] to-[#b85a5e] text-white px-10 py-5 rounded-2xl text-lg font-bold tracking-wide shadow-xl hover:scale-105 hover:shadow-2xl transition duration-500"
+  variants={fadeInUp}
+  whileHover={{ scale: 1.08 }}
+  whileTap={{ scale: 0.96 }}
+  onClick={() => navigate("/contact")}
+>
+  Book Your Luxury Experience
+</motion.button>
+
 </motion.div>
 
       </div>

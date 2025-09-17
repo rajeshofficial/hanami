@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import Home from "./pages/Home"
 import ServiceDetail from "./pages/ServiceDetail"
 import ScrollToHashElement from "./ScrollToHashElement"
+import Contact from "./components/Contact"
+
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         path="/services/style-alchemy"
         element={<ServiceDetail slug="style-alchemy" />}
       />
+      <Route path="/contact" element={<Contact />} />
+
       <Route
         path="/services/closet-curator"
         element={<ServiceDetail slug="closet-curator" />}
