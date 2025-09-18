@@ -16,7 +16,7 @@ const Contact = () => {
     emailjs
       .send(
         'service_86x069o', // Your Service ID
-        'template_2x88pke', // Replace with your Template ID from EmailJS
+        'template_2x88pke', // Your Template ID
         {
           name: formData.name,
           email: formData.email,
@@ -24,7 +24,7 @@ const Contact = () => {
           service: formData.service,
           message: formData.message,
         },
-        '-1CyQjDExQnpOqghD' // Replace with your Public Key from EmailJS
+        '-1CyQjDExQnpOqghD' // Your Public Key
       )
       .then(
         () => {
@@ -54,6 +54,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-[#F2EDE7] to-[#F9C4C5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-heading text-[#0F0000] mb-6">
             Book Your Free Consultation
@@ -63,7 +64,9 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Left Column - Form */}
           <div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-heading text-[#0F0000] mb-6">Get In Touch</h3>
@@ -143,7 +146,57 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          {/* Right Column stays same */}
+
+          {/* Right Column - Info */}
+          <div className="space-y-8">
+            {/* Why Choose */}
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-heading text-[#0F0000] mb-4">Why Choose Hanami?</h3>
+              <ul className="space-y-4">
+                {[
+                  "Styling rooted in you—your body, colouring, and lifestyle",
+                  "Confidence-first approach that goes beyond trends",
+                  "Practical, sustainable solutions for everyday life",
+                  "Guidance that helps you look good and feel aligned"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start">
+                    <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-[#0F0000] font-['sans-serif']">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-heading text-[#0F0000] mb-4">Contact Information</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-[#743438] mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                  <a
+                    href="mailto:hanamiimage@gmail.com"
+                    className="text-[#0F0000] font-['sans-serif'] hover:underline"
+                  >
+                    hanamiimage@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-[#743438] mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  <span className="text-[#0F0000] font-['sans-serif']">
+                    <a href="tel:+919717229153" className="hover:underline">9717229153</a> / 
+                    <a href="tel:+919555429636" className="hover:underline">95554 29636</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
