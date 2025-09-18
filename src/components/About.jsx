@@ -5,7 +5,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-5xl font-heading text-[#0F0000] mb-6">
-              About Hamani
+              About Hanami
             </h2>
             <p className="text-xl text-[#866061] mb-6 font-['sans-serif'] leading-relaxed">
 At Hanami, we believe style is more than clothes—it’s self-expression. Our mission is to help you discover your unique aesthetic and build confidence through thoughtful, personalized styling.

@@ -37,7 +37,7 @@ const Header = () => {
           {/* Logo */}
        <div className="flex items-center">
   <a href="/">
-    <img src="/logo3.png" alt="Hamani" className="h-16 w-auto cursor-pointer" />
+    <img src="/logo3.png" alt="Hanaii" className="h-16 w-auto cursor-pointer" />
   </a>
 </div>
 

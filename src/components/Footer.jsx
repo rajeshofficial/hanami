@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <img
                 src="/img1.png"
-                alt="Hamani"
+                alt="Hanami"
                 className="h-16 w-auto brightness-0 invert"
               />
             </div>
@@ -63,7 +63,7 @@ const Footer = () => {
   <div className="flex flex-col md:flex-row justify-between items-center">
     {/* Left side: copyright */}
     <p className="text-gray-300 font-['sans-serif'] text-sm">
-      © {new Date().getFullYear()} Hamani. All rights reserved.
+      © {new Date().getFullYear()} Hanami. All rights reserved.
     </p>
 
     {/* Right side: Made by link */}

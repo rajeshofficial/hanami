@@ -3,19 +3,19 @@ const Testimonials = () => {
     {
       name: "Sarah M.",
       title: "Business Executive",
-      text: "Hamani completely transformed my professional wardrobe. I now feel confident and put-together for every meeting. The investment in personal styling has paid dividends in my career.",
+      text: "Hanami completely transformed my professional wardrobe. I now feel confident and put-together for every meeting. The investment in personal styling has paid dividends in my career.",
       rating: 5
     },
     {
       name: "Raghav L.",
       title: "Creative Director",
-      text: "I was skeptical about personal styling, but Hamani showed me how to express my personality through fashion while maintaining a professional edge. Game-changer!",
+      text: "I was skeptical about personal styling, but Hanami showed me how to express my personality through fashion while maintaining a professional edge. Game-changer!",
       rating: 5
     },
     {
       name: "Arpita C .",
       title: "Marketing Manager",
-      text: "The wardrobe cleanse was exactly what I needed. Hamani helped me rediscover pieces I'd forgotten about and showed me new ways to style them. Brilliant service!",
+      text: "The wardrobe cleanse was exactly what I needed. Hanami helped me rediscover pieces I'd forgotten about and showed me new ways to style them. Brilliant service!",
       rating: 5
     }
   ]
