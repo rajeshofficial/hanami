@@ -41,7 +41,7 @@ const Services = () => {
         "Personal Style - Your signature look",
         "Fit & Fashion - Body shape analysis",
         "Cluster Shopping (online)",
-        "Cluster Shopping (offline) (costs extra Rs. 2,000)",
+        "Cluster Shopping (offline)",
       ],
       price: "Basic",
       image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
