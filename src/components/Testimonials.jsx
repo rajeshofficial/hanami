@@ -55,7 +55,7 @@ const Testimonials = () => {
 
         <div className="text-center mt-12">
           <a
-            href="#consultation"
+            href="#contact"
             className="bg-[#743438] text-white px-8 py-4 text-lg font-['sans-serif'] rounded-md hover:bg-[#440000] transition-colors"
           >
             Join Our Happy Clients

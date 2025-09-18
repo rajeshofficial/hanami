@@ -26,7 +26,7 @@ const Services = () => {
         "Lifestyle Evaluation",
         "Colour Analysis",
         "Makeup Shopping",
-        "Makeup Session (costs extra Rs. 1,000)",
+        "Makeup Session ",
       ],
       price: "Basic",
       image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",

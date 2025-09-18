@@ -33,7 +33,7 @@ True style isn’t about chasing trends, it’s about creating a wardrobe that r
             </div> */}
 
             <a
-              href="#consultation"
+              href="#contact"
               className="inline-block bg-[#743438] text-white px-8 py-4 text-lg font-['sans-serif'] rounded-md hover:bg-[#440000] transition-colors"
             >
               Get Started Today

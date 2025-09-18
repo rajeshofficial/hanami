@@ -69,7 +69,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <a
-              href="#consultation"
+              href="#contact"
               className="bg-[#743438] text-white px-8 py-4 text-lg font-['sans-serif'] rounded-md hover:bg-[#440000] transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Book Your Free Consultation
