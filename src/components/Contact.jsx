@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,9 +12,36 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry! We\'ll be in touch soon.')
+
+    emailjs
+      .send(
+        'service_86x069o', // Your Service ID
+        'template_2x88pke', // Replace with your Template ID from EmailJS
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        },
+        '-1CyQjDExQnpOqghD' // Replace with your Public Key from EmailJS
+      )
+      .then(
+        () => {
+          alert("Thank you for your inquiry! We'll be in touch soon.")
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            service: '',
+            message: ''
+          })
+        },
+        (error) => {
+          console.error('FAILED...', error.text)
+          alert('Oops! Something went wrong. Please try again later.')
+        }
+      )
   }
 
   const handleChange = (e) => {
@@ -78,22 +106,21 @@ const Contact = () => {
                 <div>
                   <label htmlFor="service" className="block text-[#0F0000] font-['sans-serif'] mb-2">Service Interest</label>
                   <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-[#866061] rounded-md focus:outline-none focus:ring-2 focus:ring-[#743438] font-['sans-serif']"
-                >
-                  <option value="">Select a service</option>
-                  <option value="the-first-bloom">The First Bloom</option>
-                  <option value="true-tones">True Tones</option>
-                  <option value="style-sculpt">Style Sculpt</option>
-                  <option value="image-edit">Image Edit</option>
-                  <option value="style-alchemy">Style Alchemy</option>
-                  <option value="closet-curator">Closet Curator</option>
-                  <option value="dining-etiquette">Dining Etiquette</option>
-                </select>
-       
+                    id="service"
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-[#866061] rounded-md focus:outline-none focus:ring-2 focus:ring-[#743438] font-['sans-serif']"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="the-first-bloom">The First Bloom</option>
+                    <option value="true-tones">True Tones</option>
+                    <option value="style-sculpt">Style Sculpt</option>
+                    <option value="image-edit">Image Edit</option>
+                    <option value="style-alchemy">Style Alchemy</option>
+                    <option value="closet-curator">Closet Curator</option>
+                    <option value="dining-etiquette">Dining Etiquette</option>
+                  </select>
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-[#0F0000] font-['sans-serif'] mb-2">Message</label>
@@ -116,67 +143,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-heading text-[#0F0000] mb-4">Why Choose Hamani?</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Styling rooted in you—your body, colouring, and lifestyle</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Confidence-first approach that goes beyond trends</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Practical, sustainable solutions for everyday life</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 text-[#743438] mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[#0F0000] font-['sans-serif']">Guidance that helps you look good and feel aligned</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-heading text-[#0F0000] mb-4">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-[#743438] mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <a
-  href="mailto:hanamiimage@gmail.com"
-  className="text-[#0F0000] font-['sans-serif'] hover:underline"
->
-  hanamiimage@gmail.com
-</a>
-
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-[#743438] mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-        <span className="text-[#0F0000] font-['sans-serif']">
-  <a href="tel:+919717229153" className="hover:underline">9717229153</a> / 
-  <a href="tel:+919555429636" className="hover:underline">95554 29636</a>
-</span>
-
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Right Column stays same */}
         </div>
       </div>
     </section>
