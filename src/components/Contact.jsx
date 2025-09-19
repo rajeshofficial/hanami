@@ -120,7 +120,7 @@ const Contact = () => {
                     <option value="true-tones">True Tones</option>
                     <option value="style-sculpt">Style Sculpt</option>
                     <option value="image-edit">Image Edit</option>
-                    <option value="style-alchemy">Style Alchemy</option>
+                    <option value="style-alchemy">petal to power </option>
                     <option value="closet-curator">Closet Curator</option>
                     <option value="dining-etiquette">Dining Etiquette</option>
                   </select>
