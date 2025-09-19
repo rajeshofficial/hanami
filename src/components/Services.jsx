@@ -1,4 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import C1 from "../assets/s1.png"
+import C2 from "../assets/s2.png";
+import C3 from "../assets/s3.png";
+import C4 from "../assets/s4.png";
+import C5 from "../assets/s5.png";
+import C6 from "../assets/s6.png";
+import C7 from "../assets/s7.png";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -15,7 +22,7 @@ const Services = () => {
         "Cluster shopping done online",
       ],
       price: "Basic",
-      image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
+      image: C1,
     },
     {
       title: "True Tones",
@@ -29,7 +36,7 @@ const Services = () => {
         "Makeup Session ",
       ],
       price: "Basic",
-      image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
+    image: C2,
     },
     {
       title: "Style Sculpt",
@@ -44,7 +51,8 @@ const Services = () => {
         "Cluster Shopping (offline)",
       ],
       price: "Basic",
-      image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
+    image: C3,
+
     },
     {
       title: "Image Edit",
@@ -61,7 +69,8 @@ const Services = () => {
         "Makeup Shopping (costs extra Rs. 2,000)",
       ],
       price: "Intermediate",
-      image: "https://ext.same-assets.com/3327434280/4212507088.jpeg",
+     image: C4,
+
     },
     {
       title: "Closet Curator",
@@ -76,7 +85,8 @@ const Services = () => {
         "Cluster shopping (offline) (costs extra Rs. 2,000)",
       ],
       price: "Intermediate",
-      image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
+   image: C5,
+
     },
     {
       title: "Petal to Power",
@@ -94,7 +104,8 @@ const Services = () => {
         "Makeup Shopping ",
       ],
       price: "Advanced",
-      image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
+image: C6,
+
     },
     
     {
@@ -109,7 +120,8 @@ const Services = () => {
         "Graceful conversations during meals",
       ],
       price: "Basic",
-      image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
+     image: C7,
+
     },
   ];
 
