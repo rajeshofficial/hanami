@@ -2,6 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import Contact from "../components/Contact"
 import { useNavigate } from "react-router-dom"; 
+import img1 from "../assets/1.png"
+import img2 from "../assets/2.png"
+import img3 from "../assets/3.png"
+import img4 from "../assets/4.png"
+import img5 from "../assets/5.png"
+import img6 from "../assets/6.png"
+import img7 from "../assets/7.png"
+
 
 
 const serviceData = {
@@ -9,24 +17,24 @@ const serviceData = {
     title: "The First Bloom",
     tagline: "Shop smart, Dress better",
     description:
-      "Kickstart your style journey with a full lifestyle evaluation and curated wardrobe guidance. Perfect for those seeking a fresh, confident look.",
+      "Redefine your wardrobe with a complete lifestyle evaluation, essential style guidance, and curated online shopping clusters. ",
     extra:
-      "Our expert stylist helps you discover your personal style and create versatile outfits that work for any occasion, making fashion effortless and fun.",
+      "A simple yet sophisticated way to refresh your look with confidence.",
     features: [
       "Full lifestyle evaluation program",
       "Basic wardrobe guidance",
       "Cluster shopping done online",
     ],
     price: "Basic",
-    image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
+    image: img1,
   },
   "true-tones": {
     title: "True Tones",
     tagline: "The art of wearing your best colours",
     description:
-      "Learn which colors complement your skin tone and enhance your natural beauty with a personalized color analysis.",
+      "Discover the shades that truly flatter you with a personalized color analysis.",
     extra:
-      "Includes a lifestyle evaluation and makeup shopping guidance to help you radiate confidence with every look.",
+      "Paired with a lifestyle evaluation and curated makeup shopping guidance, this service ensures every choice enhances your natural beauty and radiates confidence.",
     features: [
       "Lifestyle evaluation",
       "Color analysis",
@@ -34,15 +42,15 @@ const serviceData = {
       "Makeup session (optional, Rs.1000 extra)",
     ],
     price: "Basic",
-    image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
+  image: img2,
   },
   "style-sculpt": {
     title: "Style Sculpt",
     tagline: "Flattering fits for every figure",
     description:
-      "Discover your signature look with a focus on clothing that complements your unique body shape.",
+      "Discover your signature look with clothing tailored to your unique body shape .",
     extra:
-      "We guide you through both online and optional offline shopping, ensuring every outfit fits perfectly and feels great.",
+      "Our experts help you understand your proportions, define your personal style, and shop smarter—both online and offline.",
     features: [
       "Lifestyle evaluation",
       "Personal style discovery",
@@ -51,15 +59,15 @@ const serviceData = {
       "Cluster shopping (offline, Rs.2000 extra)",
     ],
     price: "basic",
-    image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
+  image: img3,
   },
   "image-edit": {
     title: "Image Edit",
     tagline: "Curate a look that reflects you",
     description:
-      "Achieve a refined and polished look through a full evaluation of your lifestyle, wardrobe, colors, and body shape.",
+      "Achieve a refined and polished look with a complete style evaluation tailored to you.",
     extra:
-      "This comprehensive service helps you build a versatile and stylish wardrobe, including shopping and optional makeup guidance.",
+      "From your lifestyle and wardrobe to colors, body shape, and makeup, this all-in-one service helps you build a versatile, stylish, and confidence-boosting look.",
     features: [
       "Lifestyle evaluation",
       "Personal style - your signature look",
@@ -70,15 +78,15 @@ const serviceData = {
       "Makeup shopping ",
     ],
     price: "Intermediate",
-    image: "https://ext.same-assets.com/3327434280/4212507088.jpeg",
+    image: img4,
   },
   "style-alchemy": {
     title: "Petal to Power",
     tagline: "Dressing with impact and purpose",
     description:
-      "Our full transformation package combines wardrobe evaluation, personal style, color and body shape analysis, and curated shopping for a complete style overhaul.",
+      "Our most advanced service for a complete style overhaul.",
     extra:
-      "Step into the world with confidence and purpose, mastering your personal style across every aspect of your wardrobe and appearance.",
+      "From wardrobe to makeup, body shape to color, this package redefines your look with expert guidance at every step. Step out with confidence, purpose, and a style that’s uniquely yours.",
     features: [
       "Lifestyle evaluation",
       "Personal style - your signature look",
@@ -90,15 +98,15 @@ const serviceData = {
       "Makeup shopping ",
     ],
     price: "Advanced",
-    image: "https://ext.same-assets.com/3327434280/3902647611.jpeg",
+  image: img6,
   },
   "closet-curator": {
     title: "Closet Curator",
     tagline: "Build a wardrobe that works for you",
     description:
-      "Refine your closet with expert guidance, turning it into a functional, stylish collection tailored to your lifestyle.",
-    extra:
-      "We provide in-depth wardrobe evaluation and curated online shopping to enhance your everyday style effortlessly.",
+      "Refine your closet with expert guidance, transforming it into a functional, stylish collection that truly reflects your lifestyle.",
+    // extra:
+    //   "We provide in-depth wardrobe evaluation and curated online shopping to enhance your everyday style effortlessly.",
     features: [
       "Lifestyle evaluation",
       "Personal style - your signature look",
@@ -107,15 +115,15 @@ const serviceData = {
       "Cluster shopping (offline, Rs.2000 extra)",
     ],
     price: "Intermediate",
-    image: "https://ext.same-assets.com/3327434280/3045647499.jpeg",
+   image: img5,
   },
   "dining-etiquette": {
     title: "Dining Etiquette",
     tagline: "A presence as polished as your plate",
     description:
-      "Master formal and casual table manners to leave a lasting impression at every meal.",
+      "Master the art of dining with confidence.",
     extra:
-      "From understanding cutlery placement to graceful conversation skills, our etiquette training ensures you carry yourself with confidence in any dining setting.",
+      "Learn the essentials of formal and casual table manners to make every meal an opportunity to impress.",
     features: [
       "Table manners for formal & casual settings",
       "Understanding cutlery and place settings",
@@ -123,7 +131,7 @@ const serviceData = {
       "Graceful conversation during meals",
     ],
     price: "Intermediate",
-    image: "https://ext.same-assets.com/3327434280/1870328051.jpeg",
+    image: img7,
   },
 };
 

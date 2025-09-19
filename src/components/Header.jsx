@@ -11,7 +11,7 @@ const Header = () => {
     { title: "True Tones", slug: "true-tones" },
     { title: "Style Sculpt", slug: "style-sculpt" },
     { title: "Image Edit", slug: "image-edit" },
-    { title: "Style Alchemy", slug: "style-alchemy" },
+    { title: "Petal to Power", slug: "style-alchemy" },
     { title: "Closet Curator", slug: "closet-curator" },
     { title: "Dining Etiquette", slug: "dining-etiquette" },
   ]
