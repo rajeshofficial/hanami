@@ -35,7 +35,7 @@ const Services = () => {
       title: "Style Sculpt",
       slug: "style-sculpt",
       description:
-        "Discover your signature look and the fits that complement your body shape. Cluster shopping can be done online or offline (offline costs extra Rs. 2,000).",
+        "Discover your signature look and the fits that complement your body shape. Cluster shopping can be done online or offline .",
       features: [
         "Lifestyle Evaluation",
         "Personal Style - Your signature look",
